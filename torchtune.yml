@@ -1,0 +1,15 @@
+tokenizer:
+  _component_: torchtune.models.gemma.gemma_tokenizer
+  path: gemma-tokenizer/tokenizer.model
+
+# Tokenizer is passed into the dataset in the recipe
+dataset:
+  _component_: torchtune.datasets.instruct_dataset
+  source: json
+  path: custom-dataset.json
+  split: train
+  train_on_input: True
+  new_system_prompt: Below is an instruction that describes a task. Write a response that appropriately completes the request. 
+  column_map:
+    input: instruction_input
+    output: output

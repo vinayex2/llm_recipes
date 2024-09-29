@@ -5,3 +5,7 @@ langchain
 langchain_community 
 tiktoken
 langgraph
+torch 
+torchvision 
+torchao
+torchtune

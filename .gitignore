@@ -1,1 +1,9 @@
 .vscode
+Llama-3*
+Meta-Llama-3*
+gemma*
+*.json
+*.arrow
+.venv
+experiments
+.git*
